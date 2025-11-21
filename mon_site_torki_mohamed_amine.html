@@ -1,0 +1,133 @@
+<!--
+Fichier: mon_site_torki_mohamed_amine.html
+Instructions de déploiement (GitHub Pages):
+1. Crée un dépôt public sur GitHub (ex: mon-site-torki).
+2. Ajoute ce fichier index.html à la racine du dépôt et commit.
+3. Dans Settings > Pages, sélectionne la branche main et le dossier / (root) puis Save.
+4. Ton site sera disponible sur: https://<ton-nom-utilisateur>.github.io/<nom-du-depot>/
+--> 
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Torki Mohamed Amine — Développeur</title>
+  <style>
+    :root{--accent:#c91818;--bg:#fff;--muted:#666;--card:#fff;}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:linear-gradient(180deg,#fff 0%,#fff 60%,#fff);color:#111}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:white;background:var(--accent);flex-shrink:0}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .tag{background:rgba(201,24,24,0.12);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600}
+    ul{padding-left:18px}
+    .interest{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+    .pill{padding:8px 12px;border-radius:999px;background:#f7f7f7;border:1px solid #eee}
+    footer{margin-top:28px;padding-top:18px;border-top:1px solid #f0f0f0;text-align:center;color:var(--muted)}
+    a.button{display:inline-block;background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">TM</div>
+      <div>
+        <h1>Torki Mohamed Amine <span style="font-size:14px;color:var(--muted);font-weight:600">— Développeur</span></h1>
+        <p class="lead">Passionné par le développement web, la musique et le sport. Ce mini-site présente mon parcours, mes centres d'intérêt et mes activités.</p>
+        <div style="margin-top:10px"><a href="#contact" class="button">Me contacter</a></div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title">
+            <div class="tag">À propos</div>
+            <h3 style="margin:0;font-size:18px">Mon parcours</h3>
+          </div>
+          <p>Je m'appelle <strong>Torki Mohamed Amine</strong>. Je suis développeur (en apprentissage / étudiant) — j'aime construire des petits projets web, apprendre de nouvelles technologies et partager mes travaux sur GitHub.</p>
+
+          <h4 style="margin-top:18px">Compétences</h4>
+          <ul>
+            <li>HTML · CSS · JavaScript</li>
+            <li>PHP · MySQL (projets scolaires)</li>
+            <li>Git & GitHub (versioning et déploiement)</li>
+          </ul>
+
+          <h4 style="margin-top:18px">Projets récents</h4>
+          <ul>
+            <li>Mini-projet CRUD en PHP (gestion d'utilisateurs)</li>
+            <li>Site statique personnel (déployé sur GitHub Pages)</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">
+            <div class="tag">Centres d'intérêt</div>
+            <h3 style="margin:0;font-size:18px">Ce que j'aime</h3>
+          </div>
+          <div class="interest"><div class="pill">🎧 Musique</div><div style="color:var(--muted);">Écoute, playlists, parfois composition</div></div>
+          <div class="interest"><div class="pill">⚽ Sport</div><div style="color:var(--muted);">Fitness, football, activité régulière</div></div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title">
+            <div class="tag">Activités</div>
+            <h3 style="margin:0;font-size:18px">Ce que je fais</h3>
+          </div>
+          <ul>
+            <li>Études en informatique / développement</li>
+            <li>Création de petits sites et scripts</li>
+            <li>Participation à des projets scolaires et mini-stages</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <p style="color:var(--muted)">Tu peux ajouter une adresse email ou un lien vers ton profil GitHub / LinkedIn ici.</p>
+
+          <h4 style="margin-bottom:6px">Tags</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div class="pill">Développeur</div>
+            <div class="pill">Musique</div>
+            <div class="pill">Sport</div>
+            <div class="pill">Rouge</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="button" href="https://github.com/" target="_blank">Voir GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <h4 style="margin:6px 0">Astuce déploiement</h4>
+          <p style="color:var(--muted);font-size:14px">Nom de dépôt recommandé: <strong>mon-site-torki</strong><br>Branche: <strong>main</strong></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer id="contact">
+      <p>© <strong>Torki Mohamed Amine</strong> — Développeur. Couleur principale : Rouge.</p>
+      <p style="font-size:13px;color:var(--muted)">Ce site est un modèle prêt pour GitHub Pages. Télécharge le fichier index.html et place-le dans la racine de ton dépôt.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Script minimal : animation simple du bouton
+    document.querySelectorAll('a.button').forEach(btn=>{
+      btn.addEventListener('mouseenter',()=>btn.style.transform='translateY(-3px)');
+      btn.addEventListener('mouseleave',()=>btn.style.transform='translateY(0)');
+    });
+  </script>
+</body>
+</html>
